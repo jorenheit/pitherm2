@@ -83,8 +83,6 @@ int main(int argc, char**argv)
         double temp = getTemp();
         double setting = getSetting(fname);
 
-        std::cout << temp << ' '  << setting << '\n';
-        
         if (!heating && temp < setting)
         {
             digitalWrite(RELAY_PIN, true);
